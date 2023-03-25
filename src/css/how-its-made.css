@@ -1,6 +1,3 @@
-.how-its-made {
-}
-
 .how-its-made__container {
   display: flex;
   flex-direction: column;
@@ -28,12 +25,6 @@
   .how-its-made__content {
     flex-direction: row;
   }
-}
-
-.how-its-made__video-wrapper {
-}
-
-.how-its-made__thumb {
 }
 
 .how-its-made__image {
@@ -92,9 +83,14 @@
   max-width: 480px;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-its-mate__list {
+    gap: 24px;
+  }
+}
+
 .list__item_how-its-mate {
   display: flex;
-  padding-top: 5px;
 }
 
 .list__item_how-its-mate::before {
