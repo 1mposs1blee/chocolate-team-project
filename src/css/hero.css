@@ -3,7 +3,7 @@
 } */
 
 .hero {
-  /* width: 335px; */
+  width: 335px;
   background-image: url(/img/hero/mobile-background-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -79,18 +79,28 @@
   gap: 12px;
 }
 
-.hero-link-scroll:is(:hover, :focus) {
+.hero-link-scroll .hero-scroll-wrapper {
+  background: var(--secondary-text-color);
   color: var(--accent-color);
-  /* background-color: var(--accent-color);
-  fill: var(--secondary-accent-color); */
+}
+
+.hero-link-scroll:hover .hero-scroll-wrapper {
+  background: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.hero-link-scroll .hero-text-scroll {
+  color: var(--secondary-text-color);
+}
+
+.hero-link-scroll:hover .hero-text-scroll {
+  color: var(--accent-color);
 }
 
 .hero-text-scroll {
-  margin-right: 12px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
-  color: var(--secondary-text-color);
 }
 
 .hero-scroll-wrapper {
@@ -100,13 +110,12 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: var(--secondary-text-color);
 }
 
 .hero-icon {
   width: 16px;
   height: 16px;
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +124,7 @@
   } */
 
   .hero {
-    /* width: 704px; */
+    width: 704px;
     padding-top: 671px;
     padding-bottom: 40px;
     background-image: url(/img/hero/tablet-background-hero.jpg);
@@ -178,7 +187,7 @@
   } */
 
   .hero {
-    /* width: 1136px; */
+    width: 1136px;
     padding-top: 381px;
     background-image: url(/img/hero/desktop-background-hero.jpg);
   }
