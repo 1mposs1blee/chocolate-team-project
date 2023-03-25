@@ -57,3 +57,22 @@ body {
         padding-bottom: 128px;
     }
 }
+
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+.section-title-span {
+    color: var(--accent-color);
+}
