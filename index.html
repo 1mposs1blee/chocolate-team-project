@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-d2559516.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-a83e723c.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-148c7a34.css">
 </head>
 
 <body>
@@ -22,31 +22,40 @@
     
   </header>
   <main>
-    <section class="hero">
-  <div class="container">
+    <section class="hero-section section">
+  <div class="hero container">
     <h1 class="main-title visually-hidden">Hero section</h1>
     <p class="hero-subtitle">
       Treat yourself or a loved one to our finest ingredients for a moment of
       pure delight!
     </p>
-    <button type="button" class="hero-buy">Buy now</button>
-    <a class="hero-made" href="#how-its-made">How it’s made</a>
-    <a class="hero-scroll" href="#footer">scroll down<svg class="hero-icon">
-        <use href="/chocolate-team-project/assets/sprite-194626c8.svg#icon-angle"></use>
-      </svg>
-    </a>
+    <div class="hero-wrapper">
+      <button type="button" class="hero-buy-btn">Buy now</button>
+      <a class="hero-link-made" href="#how-its-made">How it’s made</a>
+      <a href="#footer" class="hero-link-scroll">
+        <p class="hero-text-scroll">scroll down</p>
+        <div class="hero-scroll-wrapper">
+          <svg class="hero-icon">
+            <use href="/chocolate-team-project/assets/sprite-194626c8.svg#icon-angle"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
-    <section class="adventages">
+
+    <section class="adventages section">
   <div class="container">
     <h2 hidden>adventages</h2>
     <ul class="adventages-list">
       <li class="adventages-item">
-        <svg class="adventages-icon">
-          <use href="/chocolate-team-project/assets/sprite-194626c8.svg#"></use>
-        </svg>
-        <h3>Unsurpassed taste</h3>
-        <p>
+        <div class="icon-thumb">
+          <svg width="32" height="32" class="adventages-icon">
+            <use href="/chocolate-team-project/assets/sprite-194626c8.svg#icon-chocolate-bar"></use>
+          </svg>
+        </div>
+        <h3 class="adventages-subtitle">Unsurpassed taste</h3>
+        <p class="adventages-text">
           Crafted with the finest quality cocoa beans and a dedication to
           perfection, each bite is a decadent experience that simply cannot be
           matched. Savor the richness and complexity of our Unsurpassed Taste
@@ -55,11 +64,13 @@
       </li>
 
       <li class="adventages-item">
-        <svg class="adventages-icon">
-          <use href="/chocolate-team-project/assets/sprite-194626c8.svg#"></use>
-        </svg>
-        <h3>Affordable price</h3>
-        <p>
+        <div class="icon-thumb">
+          <svg width="32" height="32" class="adventages-icon">
+            <use href="/chocolate-team-project/assets/sprite-194626c8.svg#icon-coin"></use>
+          </svg>
+        </div>
+        <h3 class="adventages-subtitle">Affordable price</h3>
+        <p class="adventages-text">
           Indulge in high-quality chocolate without breaking the bank with
           Simply Chocolate's selection of affordable treats. Enjoy
           mouth-watering truffles and velvety chocolate bars without sacrificing
@@ -69,12 +80,13 @@
       </li>
 
       <li class="adventages-item">
-        <svg class="adventages-icon">
-          <use href="/chocolate-team-project/assets/sprite-194626c8.svg#"></use>
-        </svg>
-
-        <h3>Own production</h3>
-        <p>
+        <div class="icon-thumb">
+          <svg width="32" height="32" class="adventages-icon">
+            <use href="/chocolate-team-project/assets/sprite-194626c8.svg#icon-spoon"></use>
+          </svg>
+        </div>
+        <h3 class="adventages-subtitle">Own production</h3>
+        <p class="adventages-text">
           We take pride in our own production process, ensuring that every step
           is carefully crafted to perfection. From selecting the finest
           ingredients to handcrafting each piece, our attention to detail is
@@ -84,6 +96,7 @@
     </ul>
   </div>
 </section>
+
     <section class="unique-components section">
   <div class="unique-components__container container">
     <div class="unique-components__text_wrapper">
@@ -341,7 +354,70 @@
     </div>
   </div>
 </section>
-    
+    <section class="our-products">
+    <div class="container">
+        <h2 class="section-title">Our&nbsp;<span class="section-title-span">products</span></h2>
+        <ul class="our-products-list">
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/orange-2091b6a4.jpg 1x /img/our-products/orange@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/orange-2091b6a4.jpg" alt="orange chocolate">
+                <h3 class="our-products-title">orange</h3>
+                <p class="our-products-desc">Dark chocolate</p>
+                <p class="our-products-price">45 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/apple-8a59e8f0.jpg 1x /img/our-products/apple@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/apple-8a59e8f0.jpg" alt="apple chocolate">
+                <h3 class="our-products-title">APPLE&#x26;CRANBERRY</h3>
+                <p class="our-products-desc">Milk chocolate</p>
+                <p class="our-products-price">50 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/lime-f4aaa6ab.jpg 1x /img/our-products/lime@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/lime-f4aaa6ab.jpg" alt="lime chocolate">
+                <h3 class="our-products-title">lime&#x26;sea salt</h3>
+                <p class="our-products-desc">Dark chocolate</p>
+                <p class="our-products-price">66 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/pineapple-7ac12f0f.jpg 1x /img/our-products/pineapple@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/pineapple-7ac12f0f.jpg" alt="pineapple chocolate">
+                <h3 class="our-products-title">pineapple</h3>
+                <p class="our-products-desc">Dark chocolate</p>
+                <p class="our-products-price">54 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/classic-milk-217d7206.jpg 1x /img/our-products/classic-milk@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/classic-milk-217d7206.jpg" alt="classic milk chocolate">
+                <h3 class="our-products-title">Classic</h3>
+                <p class="our-products-desc">Milk chocolate</p>
+                <p class="our-products-price">45 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/honey-195309e5.jpg 1x /img/our-products/honey@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/honey-195309e5.jpg" alt="honey chocolate">
+                <h3 class="our-products-title">honey</h3>
+                <p class="our-products-desc">Milk chocolate</p>
+                <p class="our-products-price">50 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/roasted-fruits-fcb6f1cb.jpg 1x /img/our-products/roasted-fruits@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/roasted-fruits-fcb6f1cb.jpg" alt="roasted chocolate">
+                <h3 class="our-products-title">Roasted fruits</h3>
+                <p class="our-products-desc">Dark chocolate</p>
+                <p class="our-products-price">66 UAH</p>
+            </li>
+            <li class="our-products-item">
+                <img srcset="/chocolate-team-project/assets/classic-d1340714.jpg 1x /img/our-products/classic@2x.jpg 2x"
+                    src="/chocolate-team-project/assets/classic-d1340714.jpg" alt="classic white chocolate">
+                <h3 class="our-products-title">Classic</h3>
+                <p class="our-products-desc">White chocolate</p>
+                <p class="our-products-price">54 UAH</p>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
     <section class="section">
   <div class="container">
     <h2 class="top-sellers-title section-title">
@@ -382,7 +458,19 @@
   </div>
 </section>
     
-    
+    <section class="subscribe section">
+  <div class="container">
+    <h2 class="subscribe section-title">Explore our new chocolate first</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button class="subscribe-button" type="submit">Subscribe</button>
+  </div>
+</section>
+
   </main>
   <footer>
     
