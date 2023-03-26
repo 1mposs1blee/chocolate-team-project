@@ -1,0 +1,134 @@
+.top-sellers-title {
+  text-align: center;
+  color: var(--main-text-color);
+
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-title {
+    margin-bottom: 50px;
+  }
+}
+
+.top-sellers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-list {
+    gap: 16px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-seller-item {
+    margin-bottom: 32px;
+  }
+}
+
+.top-sellers-image {
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 375px) {
+  .top-sellers-image {
+    height: 464px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-image {
+    width: 344px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-sellers-image {
+    width: 368px;
+  }
+}
+
+.top-sellers-text {
+  padding-top: 20px;
+  max-width: 335px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-text {
+    display: none;
+  }
+}
+
+.desktop-image {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-image {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-block {
+    display: flex;
+    gap: 236px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-sellers-block {
+    gap: 567px;
+  }
+}
+
+.top-sellers-text-block {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-text-block {
+    display: inline;
+  }
+}
+
+.top-sellers-button {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 28px;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+
+  font-weight: 600;
+  line-height: 1.21;
+
+  color: var(--secondary-text-color);
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-sellers-button:hover,
+.top-sellers-button:focus {
+  background-color: var(--secondary-accent-color);
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-button {
+    margin-top: 0;
+    padding: 14px 40px;
+    width: 162px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
