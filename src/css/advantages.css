@@ -7,8 +7,14 @@
 @media screen and (min-width: 768px) {
   .adventages.section {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 69px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+    .adventages.section {
+        padding-bottom: 35px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -82,6 +88,7 @@
 }
 
 .adventages-text {
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.21;
   margin-bottom: 16px;
 }
