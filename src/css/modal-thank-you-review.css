@@ -1,0 +1,124 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-thank {
+    position: relative;
+    width: 311px;
+    height: 350px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    padding: 84px 24px 178px 58px;
+
+    background-image: url(/img/png-version/mobile-chocolate-modal.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #fd9222;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .modal-thank {
+    background-image: url(/img/png-version/mobile-chocolate-modal@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-thank {
+    width: 516px;
+    height: 414px;
+    padding: 163px 49px 163px 170px;
+    background-image: url(/img/png-version/desktop-tablet-chocolate-modal.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .modal-thank {
+    background-image: url(/img/png-version/desktop-tablet-chocolate-modal@2x.png);
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #fcf1e0;
+    border-radius: 50%;
+    border-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%; /* 24/20 */
+    margin-bottom: 8px;
+    color: #fcf1e0;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 116.666667%; /* 28/24 */
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-text {
+    width: 156px;
+    font-size: 14px;
+    line-height: 114.285714%; /* 16/14 */
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-text {
+    width: 100%;
+    font-size: 18px;
+    line-height: 133.333333%; /* 24/18 */
+  }
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
