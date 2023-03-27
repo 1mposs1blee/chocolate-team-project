@@ -1,4 +1,5 @@
 .unique-components {
+  padding-top: 128px;
 }
 
 .unique-components__container {
@@ -60,7 +61,7 @@
 
 @media screen and (min-width: 1200px) {
   .unique-components__card-list {
-    gap: 19px;
+    gap: 18px;
   }
 }
 
@@ -79,7 +80,7 @@
 
 @media screen and (min-width: 1200px) {
   .unique-components__flip-card {
-    width: 269px;
+    width: 270px;
   }
 }
 
@@ -152,20 +153,21 @@
 }
 
 .unique-components__flip-card-back {
+  overflow-x: hidden;
   transform: rotateY(180deg);
-  overflow: auto;
 }
 
-.flip-card__button-list_unique-components {
+.flip-card__link-list_unique-components {
   display: flex;
   gap: 6px;
+  min-width: 214px;
   margin-bottom: 14px;
 }
 
-.flip-card__button-item_unique-components {
+.flip-card__link-item_unique-components {
 }
 
-.flip-card__button {
+.flip-card__link {
   display: flex;
   align-items: center;
   font-size: 10px;
@@ -177,7 +179,7 @@
   background-color: var(--primary-bg-color);
 }
 
-.flip-card__button-item_unique-components:first-child .flip-card__button {
+.flip-card__link-item_unique-components:first-child .flip-card__link {
   color: #fff;
   border: none;
   background-color: var(--accent-color);
