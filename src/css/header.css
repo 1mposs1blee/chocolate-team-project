@@ -9,9 +9,6 @@
   justify-content: space-between;
   }
   
- 
-  
-  
   .header-logo{
     align-items: center;
   display: flex;
@@ -23,12 +20,16 @@
   color: var(--main-text-color);
   
   font-family: 'Montserrat';
-  font-style: italic;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.03em;
   
+  }
+
+  .header-logo-text{
+    font-style: italic;
   }
 
   @media (min-width: 768px) and (max-width:1199.98px){
@@ -65,7 +66,7 @@
     fill: var(--primary-bg-color);
   }
   
-  @media (min-width: 11198.98px) {
+  @media (min-width: 1199.98px) {
     .header-icon{
         width: 24px;
     height: 24px;
@@ -190,12 +191,10 @@ transition: transform 500ms;
     width: max-content;
     
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-   
-    color: var(--secondary-text-color);
     
   }
 
@@ -210,10 +209,19 @@ transition: transform 500ms;
     
   }
 
-  .header-item-menu:hover{
+  .header-link-menu{
+    color: var(--secondary-text-color);
+
+    transition-duration: 250ms;
+    transition-property: color;
+    animation-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link-menu:hover{
     color: var(--accent-color);
   }
-  .header-item-menu:focus{
+  .header-link-menu:focus{
     color: var(--accent-color);
   }
 
@@ -231,14 +239,24 @@ margin-bottom: 24px;
     display: flex;
     align-items: flex-end;
 margin-left: 32px;
+padding-bottom: 20px;
+  }
 
-
+  @media (min-width: 767.98px) and (max-width: 1199.98px){
+    .header-list-menu{
+        padding-bottom: 24px;
+    }
   }
  
 
   .header-socials-menu{
     stroke: var(--secondary-text-color);
     fill: transparent;
+
+    transition-duration: 250ms;
+    transition-property: stroke;
+    animation-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
 
@@ -250,16 +268,29 @@ margin-left: 32px;
       }
 
   .header-instagram-menu{
-    width: 24px;
+    width: 22px;
+    height: 22px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 767.98px) and (max-width: 1199.98px){
+    .header-instagram-menu{
+        width: 24px;
     height: 24px;
-    margin-right: 21px;
+    }
   }
 
  .header-twiter-menu{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
  }
 
+ @media (min-width: 767.98px) and (max-width: 1199.98px){
+    .header-twiter-menu{
+        width: 24px;
+    height: 24px;
+    }
+  }
 
   
   @media (max-width: 1199.98px){
@@ -310,12 +341,17 @@ margin-left: 32px;
         display: none;
     }
   }
+
+  .header-socials-link{
+    padding-top: 26px;
+    padding-bottom: 34px;
+  }
   
   .header-instagram{
     width: 24px;
     height: 24px;
     
-    margin-right: 18px;
+    margin-right: 21px;
 
     transition-duration: 250ms;
     transition-property: stroke;
