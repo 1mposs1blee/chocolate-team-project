@@ -22,6 +22,7 @@
   }
 }
 
+.backdrop.is-hidden,
 .modal-thank-you-buy.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -42,6 +43,8 @@
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
+  transition: background-color var(--transition-duration-and-func),
+    border var(--transition-duration-and-func);
 }
 
 .modal-close-button-icon {
