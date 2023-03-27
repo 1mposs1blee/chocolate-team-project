@@ -9,7 +9,7 @@
 .our-products-list {
     display: flex;
     margin-top: 32px;
-    gap: 18px;
+    /* gap: 18px; */
     /* flex-wrap: wrap; */
 }
 @media screen and (min-width:768px) {
