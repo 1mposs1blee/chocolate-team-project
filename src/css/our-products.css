@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .our-products-list {
@@ -11,6 +11,11 @@
     margin-top: 32px;
     gap: 18px;
     /* flex-wrap: wrap; */
+}
+@media screen and (min-width:768px) {
+    .our-products-list {
+        margin-top: 50px;
+    }    
 }
 
 .our-products-item {
