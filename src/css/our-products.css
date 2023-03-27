@@ -87,3 +87,22 @@
         max-width: 270px;
     }    
 }
+
+.swiper-pagination {
+    margin-top: 32px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.1);
+
+}
+.swiper-pagination-bullet-active {
+    width: 28px;
+        height: 13px;
+    border-radius: 7px;
+        background: #FD9222;
+}
