@@ -8,6 +8,15 @@
   padding-bottom: 63px;
   background-image: url(/img/subscribe/mobile-background-subscribe.jpg);
   background-size: 375px;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe .container {
+    background-image: url(/img/subscribe/mobile-background-subscribe@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -17,6 +26,14 @@
     background-image: url(/img/subscribe/tablet-background-subscribe.jpg);
     background-size: 768px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe .container {
+      background-image: url(/img/subscribe/tablet-background-subscribe@2x.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -24,35 +41,13 @@
     background-image: url(/img/subscribe/desktop-background-subscribe.jpg);
     background-size: 1200px;
   }
-}
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .subscribe .container {
-    background-image: url(/img/subscribe/mobile-background-subscribe@2x.jpg);
-    background-size: cover;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .subscribe .container {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    background-image: url(/img/subscribe/tablet-background-subscribe@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .subscribe .container {
-    background-image: url(/img/subscribe/desktop-background-subscribe@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe .container {
+      background-image: url(/img/subscribe/desktop-background-subscribe@2x.jpg);
+    }
   }
 }
 
@@ -100,14 +95,6 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe .container {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    background-image: url(/img/subscribe/tablet-background-subscribe.jpg);
-  }
-}
-
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: var(--secondary-accent-color);
@@ -118,7 +105,6 @@
   .subscribe-button {
     margin-top: 0;
     padding: 14px 40px;
-    width: 162px;
     font-size: 18px;
     line-height: 1.22;
   }
