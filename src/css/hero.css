@@ -119,9 +119,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .hero-section {
+  .hero-section {
     padding-bottom: 50px;
-  } */
+  }
 
   .hero {
     width: 704px;
