@@ -83,14 +83,14 @@
     width: 516px;
     height: 414px;
     padding: 154px 44px 154px 163px;
-    background-image: url(../img/png-version/desktop-tablet-chocolate-modal.png);
+    background-image: url(/img/png-version/desktop-tablet-chocolate-modal.png);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .modal-thank-you-buy {
-      background-image: url(../img/png-version/desktop-tablet-chocolate-modal@2x.png);
+      background-image: url(/img/png-version/desktop-tablet-chocolate-modal@2x.png);
     }
   }
 
