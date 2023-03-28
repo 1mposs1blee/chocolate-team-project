@@ -1,0 +1,112 @@
+.modal-subscribe{
+    display: block;
+    border-radius: 15px;
+    background-color: var(--primary-bg-color);
+    width:311px;
+    padding-bottom: 32px;
+    position: relative;
+    margin: 0px;
+  }
+  .subscribe-close{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    top: 15px;
+    right: 14px;
+  }
+  .subscribe-close-icon{
+    stroke:#ffffff;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .modal-subscribe-text{
+    color: var(--main-text-color);
+    margin: 32px 24px 24px 24px;
+    weight:600;
+    font-size:20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    width: 263px;
+  }
+  .modal-subscribe-text-span{
+    color:var(--accent-color);
+  }
+  .subscribe-form{
+    margin-left: 24px;
+    position: relative;
+  }
+  .subscribe-form-input{
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 25px;
+    width: 263px;
+    height: 45px;
+    padding-left: 18px;
+  }
+  
+  .subscribe-button{
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    left: 163px;
+    top: 0px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 100px;
+    color:#ffffff
+  }
+  .modal-subscribe-img-tablet{
+    display: none;
+  }
+  
+  
+  @media screen and (min-width:768px) {
+    .modal-subscribe{
+      width:538px;
+      padding-bottom: 40px;
+      position: relative;
+    }
+    .modal-subscribe-text{
+      margin: 40px 160px 28px 40px;
+      font-size:24px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      width: 298px;
+    }
+  
+    .subscribe-form{
+      margin-left: 40px;
+      
+    }
+    .subscribe-form-input{
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+      border-radius: 25px;
+      width: 313px;
+      height: 52px;
+      padding-left: 24px;
+    }
+    
+    .subscribe-button{
+      width: 137px;
+      height: 52px;
+      right: 40px;
+      left: 321px;
+  
+    }
+    .modal-subscribe-img-mobile{
+      display: none;
+    }
+    .modal-subscribe-img-tablet{
+      display: flex;
+    }
+  }
