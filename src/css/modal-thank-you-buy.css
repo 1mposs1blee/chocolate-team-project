@@ -1,4 +1,9 @@
 .modal-thank-you-buy {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 30;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,11 +27,10 @@
   }
 }
 
-.backdrop.is-hidden,
-.modal-thank-you-buy.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.modal.modal-thank-you-buy.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .modal-close-button {

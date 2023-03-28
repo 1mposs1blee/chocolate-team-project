@@ -22,10 +22,16 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-.backdrop {
+.overlay.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
   position: fixed;
   top: 0;
   left: 0;
+
+  z-index: 1;
 
   display: flex;
   justify-content: center;
@@ -35,6 +41,12 @@ body {
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .container {

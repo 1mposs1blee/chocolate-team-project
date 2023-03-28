@@ -12,7 +12,7 @@
   <form class="modal-buy-form">
     <!-- ================ SLIDER =============== -->
 
-    <div class="swiper">
+    <div class="swiper modal-bay-swiper">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
           <input
@@ -231,7 +231,13 @@
           placeholder="Enter text"
         ></textarea>
       </label>
-      <button type="submit" class="modal-buy-now-button">Submit</button>
+      <button
+        type="submit"
+        data-modal="modal-buy-thanks"
+        class="modal-buy-now-button js-open-modal js-modal-close"
+      >
+        Submit
+      </button>
     </div>
   </form>
 </div>
