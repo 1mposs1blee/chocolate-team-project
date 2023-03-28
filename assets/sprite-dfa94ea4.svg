@@ -33,5 +33,9 @@
 <symbol id="icon-burger" viewBox="0 0 47 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
 </symbol>
+<symbol id="icon-flag" viewBox="0 0 40 32">
+<path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M40.209 0.495h-39.902v29.695h39.902v-29.695z"></path>
+<path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.307 0.495h39.902v14.847h-39.902v-14.847z"></path>
+</symbol>
 </defs>
 </svg>
