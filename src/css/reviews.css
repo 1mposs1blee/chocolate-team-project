@@ -1,0 +1,110 @@
+.reviews.section {
+  text-align: center;
+}
+
+.reviews.section-title {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  reviews.section-title {
+    margin-bottom: 50px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 65px;
+  padding-top: 42px;
+}
+@media screen and (min-width: 768px) {
+  .reviews-list {
+    gap: 16px;
+    margin-bottom: 95px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews-list {
+    gap: 28px;
+  }
+}
+
+.reviews-item {
+  position: relative;
+}
+
+.reviews-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reviewer-label {
+  width: 335px;
+  height: 200px;
+  padding-top: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .reviewer-label {
+    width: 344px;
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviewer-label {
+    width: 360px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 24px;
+}
+
+.reviews-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+
+  font-weight: 600;
+  line-height: 1.21;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-button {
+    margin-top: 0;
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
