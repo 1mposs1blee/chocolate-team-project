@@ -1,6 +1,6 @@
-<div hidden class="review-backdrop overlay js-overlay-modal" data-modal="review">
-    <div class="review-modal">
-        <button class="close-btn">
+<!-- <div hidden class="review-backdrop overlay js-overlay-modal" data-modal="review"> -->
+    <div class="review-modal modal" data-modal="review-modal">
+        <button class="close-btn js-modal-close">
             <svg class="close-icon">
                 <use href="/img/sprite.svg#icon-close">
                 </use>
@@ -29,6 +29,6 @@
                 <textarea class="review-input review-textarea" type="text" name="comment" placeholder="Enter text"></textarea>
             </label>
         </form>
-        <button type="submit" class="send-btn">Send</button>
+        <button type="submit" class="send-btn .js-open-modal" data-modal="modal-thank">Send</button>
     </div>
-</div>
+<!-- </div> -->

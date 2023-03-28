@@ -1,3 +1,15 @@
+.modal.review-modal {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal.review.active,
+.overlay.backdrop-review-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
 .review-backdrop {
     position: fixed;
     top: 0;
