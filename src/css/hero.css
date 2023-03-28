@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 30px;
   padding-top: 395px;
   padding-bottom: 21px;
 }
@@ -49,6 +49,8 @@
   background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
+  transition: color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func);
 }
 
 .hero-buy-btn:is(:hover, :focus) {
@@ -64,6 +66,9 @@
   border: 1px solid var(--secondary-text-color);
   border-radius: 100px;
   padding: 12px 28px;
+  transition: color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func),
+    border var(--transition-duration-and-func);
 }
 
 .hero-link-made:is(:hover, :focus) {
@@ -77,6 +82,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  transition: color var(--transition-duration-and-func);
 }
 
 .hero-link-scroll .hero-scroll-wrapper {
@@ -127,6 +133,8 @@
     width: 704px;
     padding-top: 671px;
     padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-image: url(/img/hero/tablet-background-hero.jpg);
   }
 
@@ -161,7 +169,7 @@
   .hero-link-scroll {
     margin-top: 0;
     padding-bottom: 0;
-    margin-left: 153px;
+    margin-left: auto;
     gap: 14px;
   }
 
