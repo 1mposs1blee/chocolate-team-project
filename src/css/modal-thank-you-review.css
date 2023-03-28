@@ -22,7 +22,7 @@ backdrop.is-hidden {
     margin: 0 auto;
     padding: 84px 24px 178px 58px;
 
-    background-image: url(../img/png-version/mobile-chocolate-modal.png);
+    background-image: url(/img/png-version/mobile-chocolate-modal.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: var(--accent-color);
