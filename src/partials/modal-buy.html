@@ -1,0 +1,237 @@
+<div class="modal modal-buy" data-modal="modal-buy-now">
+  <button class="modal-buy-close-button js-modal-close" type="button">
+    <svg class="modal-buy-close-icon">
+      <use href="/img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal-bay-title">
+    <span class="section-title-span">bUY</span>
+    nOW
+  </h2>
+
+  <form class="modal-buy-form">
+    <!-- ================ SLIDER =============== -->
+
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <input
+            id="weight-100g-s"
+            class="modal-buy-form-check visually-hidden"
+            type="checkbox"
+            name="weight"
+            value="100g"
+          />
+          <label for="weight-100g-s" class="modal-buy-form-check-desk">
+            <img
+              srcset="
+                /img/modal-buy-now/mobile-pieces.jpg    1x,
+                /img/modal-buy-now/mobile-pieces@2x.jpg 2x
+              "
+              class="modal-buy-form-check-image"
+              src="/img/modal-buy-now/mobile-pieces.jpg"
+              alt="chocolate"
+            />
+            <span class="modal-buy-form-check-button"> 100 g </span>
+          </label>
+        </li>
+        <li class="swiper-slide">
+          <input
+            id="weight-200g-s"
+            class="modal-buy-form-check visually-hidden"
+            type="checkbox"
+            name="weight"
+            value="200g"
+          />
+          <label for="weight-200g-s" class="modal-buy-form-check-desk">
+            <img
+              srcset="
+                /img/modal-buy-now/mobile-column.jpg     1x,
+                /img/modal-buy-now/mobile-column1@2x.jpg 2x
+              "
+              class="modal-buy-form-check-image"
+              src="/img/modal-buy-now/mobile-column.jpg"
+              alt="chocolate"
+            />
+            <span class="modal-buy-form-check-button"> 200 g </span>
+          </label>
+        </li>
+        <li class="swiper-slide">
+          <input
+            id="weight-300g-s"
+            class="modal-buy-form-check visually-hidden"
+            type="checkbox"
+            name="weight"
+            value="300g"
+          />
+          <label for="weight-300g-s" class="modal-buy-form-check-desk">
+            <img
+              srcset="
+                /img/modal-buy-now/mobile-chocolate.jpg    1x,
+                /img/modal-buy-now/mobile-chocolate@2x.jpg 2x
+              "
+              class="modal-buy-form-check-image"
+              src="/img/modal-buy-now/mobile-chocolate.jpg"
+              alt="chocolate"
+            />
+            <span class="modal-buy-form-check-button"> 300 g </span>
+          </label>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- ================ /SLIDER =============== -->
+
+    <ul class="modal-buy-form-check-list">
+      <li class="modal-buy-form-check-iteam">
+        <input
+          id="weight-100g"
+          class="modal-buy-form-check visually-hidden"
+          type="checkbox"
+          name="weight"
+          value="100g"
+        />
+        <label for="weight-100g" class="modal-buy-form-check-desk">
+          <img
+            srcset="
+              /img/modal-buy-now/mobile-pieces.jpg    1x,
+              /img/modal-buy-now/mobile-pieces@2x.jpg 2x
+            "
+            class="modal-buy-form-check-image"
+            src="/img/modal-buy-now/mobile-pieces.jpg"
+            alt="chocolate"
+          />
+          <span class="modal-buy-form-check-button"> 100 g </span>
+        </label>
+      </li>
+      <li class="modal-buy-form-check-iteam">
+        <input
+          id="weight-200g"
+          class="modal-buy-form-check visually-hidden"
+          type="checkbox"
+          name="weight"
+          value="200g"
+        />
+        <label for="weight-200g" class="modal-buy-form-check-desk">
+          <img
+            srcset="
+              /img/modal-buy-now/mobile-column.jpg     1x,
+              /img/modal-buy-now/mobile-column1@2x.jpg 2x
+            "
+            class="modal-buy-form-check-image"
+            src="/img/modal-buy-now/mobile-column.jpg"
+            alt="chocolate"
+          />
+          <span class="modal-buy-form-check-button"> 200 g </span>
+        </label>
+      </li>
+      <li class="modal-buy-form-check-iteam">
+        <input
+          id="weight-300g"
+          class="modal-buy-form-check visually-hidden"
+          type="checkbox"
+          name="weight"
+          value="300g"
+        />
+        <label for="weight-300g" class="modal-buy-form-check-desk">
+          <img
+            srcset="
+              /img/modal-buy-now/mobile-chocolate.jpg    1x,
+              /img/modal-buy-now/mobile-chocolate@2x.jpg 2x
+            "
+            class="modal-buy-form-check-image"
+            src="/img/modal-buy-now/mobile-chocolate.jpg"
+            alt="chocolate"
+          />
+          <span class="modal-buy-form-check-button"> 300 g </span>
+        </label>
+      </li>
+    </ul>
+
+    <!-- ======== Personal information ======= -->
+
+    <div class="modal-buy-info">
+      <span>
+        <label class="modal-buy-info-field">
+          <span class="modal-buy-info-label">Personal information</span>
+        </label>
+
+        <span class="modal-buy-info-input-list">
+          <input
+            class="modal-buy-info-input"
+            type="text"
+            placeholder="Name"
+            name="user_name"
+            required
+            minlength="2"
+          />
+          <input
+            class="modal-buy-info-input"
+            type="text"
+            placeholder="Surname"
+            name="user_surname"
+            required
+            minlength="2"
+          />
+        </span>
+      </span>
+
+      <label class="modal-buy-info-field">
+        <span class="modal-buy-info-label">Email</span>
+        <input
+          class="modal-buy-info-input"
+          type="email"
+          placeholder="Enter your email"
+          name="user_email"
+        />
+      </label>
+      <label class="modal-buy-info-field"
+        ><span class="modal-buy-info-label">Phone number</span>
+        <span class="modal-buy-info-input-number">
+          <input
+            class="modal-buy-info-input number"
+            type="tel"
+            placeholder="Phone number"
+            name="user_phone"
+            required
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="[0-9] **-***-**-**"
+          />
+          <span class="modal-buy-icon">
+            <svg class="modal-buy-icon-flag" width="24" height="24">
+              <use href="/img/sprite.svg#icon-flag"></use>
+            </svg>
+            <span class="modal-buy-icon-number">+380</span>
+          </span>
+        </span>
+      </label>
+      <label class="modal-buy-info-field"
+        ><span class="modal-buy-info-label">Card number</span>
+        <span class="modal-buy-info-input-card">
+          <input
+            class="modal-buy-info-input"
+            type="number"
+            placeholder="Enter card"
+            name="user_card"
+            required
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            title="[0-9] ****-****-****-****"
+          />
+          <svg class="modal-buy-icon-card" width="32" height="21">
+            <use href="/img/sprite.svg#icon-mastercard"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-buy-info-field"
+        ><span class="modal-buy-info-label">Comment</span>
+        <textarea
+          class="modal-buy-info-textarea"
+          name="user_comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-now-button">Submit</button>
+    </div>
+  </form>
+</div>
