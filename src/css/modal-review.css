@@ -10,6 +10,7 @@
     visibility: visible;
     pointer-events: all;
 }
+
 .review-backdrop {
     position: fixed;
     top: 0;
@@ -18,22 +19,24 @@
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
 }
+
 .review-modal {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
     max-width: 311px;
     background-color: #FAFAFA;
     padding: 32px 24px;
-}   
+}
+
 @media screen and (min-width: 768px) {
     .review-modal {
         max-width: 517px;
         padding: 40px;
     }
-    
+
 }
 
 .review-modal-title {
@@ -42,24 +45,27 @@
     margin-bottom: 32px;
     max-width: 255px;
 }
+
 @media screen and (min-width:768px) {
     .review-modal-title {
         font-size: 24px;
         line-height: 1.16;
         max-width: 298px;
-            margin-bottom: 40px;
+        margin-bottom: 40px;
     }
 }
+
 .review-modal-form {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
+
 @media screen and (min-width: 768px) {
     .review-modal-form {
         gap: 19px;
     }
-    
+
 }
 
 .review-input {
@@ -75,31 +81,35 @@
     font-weight: 400;
     color: --main-text-color;
 }
+
 .review-phone-input {
     padding-left: 106px;
 }
+
 .review-input:placeholder-shown {
-        color: rgba(64, 64, 64, 0.3);
+    color: rgba(64, 64, 64, 0.3);
 
 }
 
-.review-input:hover, 
+.review-input:hover,
 .review-input:focus {
-        border: 1.5px solid var(--accent-color);
+    border: 1.5px solid var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
     .review-input {
-    height: 66px;
-    padding-left: 24px;
-    font-size: 18px;
-    line-height: 1.21;
+        height: 66px;
+        padding-left: 24px;
+        font-size: 18px;
+        line-height: 1.21;
     }
+
     .review-phone-input {
-    padding-left: 177px;
-}
+        padding-left: 177px;
+    }
 
 }
+
 /* .review-label {
     position: relative;
 } */
@@ -117,23 +127,34 @@
     border: none;
     padding: 0;
 }
+
 @media screen and (min-width:768px) {
     .close-btn {
         width: 28px;
         height: 28px;
     }
 }
-.close-icon{
+
+.close-icon {
     position: absolute;
     width: 24px;
     height: 24px;
 }
+
+@media screen and (min-width:768px) {
+    .close-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
 .input-flag {
     position: relative;
     display: flex;
     justify-content: center;
 
 }
+
 .flag-phone {
     position: absolute;
     height: 25px;
@@ -147,7 +168,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.22;
-    border-right: 2px solid rgba(17, 17, 17, 0.05);}
+    border-right: 2px solid rgba(17, 17, 17, 0.05);
+}
 
 @media screen and (min-width:768px) {
     .flag-phone {
@@ -160,12 +182,14 @@
         padding-right: 32px;
         gap: 18px;
     }
-    
+
 }
+
 .flag-icon {
     width: 24px;
     height: 18px;
 }
+
 @media screen and (min-width:768px) {
     .flag-icon {
         width: 32px;
@@ -179,12 +203,14 @@
     resize: none;
     padding-top: 22px;
 }
+
 @media screen and (min-width: 768px) {
     .review-textarea {
-    height: 137px;
+        height: 137px;
     }
 
 }
+
 .send-btn {
     width: 93px;
     height: 41px;
@@ -198,45 +224,11 @@
     line-height: 1.2;
     color: #FFFFFF;
 }
+
 @media screen and (min-width:768px) {
     .send-btn {
-        padding: 14px 40px ;
+        padding: 14px 40px;
         width: 117px;
         height: 45px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
