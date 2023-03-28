@@ -13,11 +13,12 @@
                 <input class="review-input" type="text" name="username" placeholder="Name" required >
             </label>
             <label class="review-label" for="mail">
-                <input class="review-input" type="text" name="mail" placeholder="Email" required >
+                <input class="review-input" type="email" name="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Email" required >
             </label>
             <label class="review-label" for="phone">
             <span class="input-flag">
-                <input class="review-input review-phone-input" type="text" name="phone" placeholder="Phone" required >
+                <input class="review-input review-phone-input" type="text" name="phone" placeholder="Phone" required 
+                pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}">
                 <span class="flag-phone">
                 <svg class="flag-icon">
                     <use href="/img/sprite.svg#icon-flag"></use>
