@@ -37,6 +37,13 @@ body {
   background: rgba(46, 47, 66, 0.4);
 }
 
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
 .container {
   max-width: 375px;
   padding-left: 20px;
