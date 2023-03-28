@@ -1,0 +1,115 @@
+
+/* .overlay{
+
+    opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+} */
+
+.modal{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-subscribe-container{
+ 
+    background-color: var(--primary-bg-color);
+    border-radius: 15px;
+    position: absolute;
+    width: 311px;
+
+    background-image: url(../img/modal-explore-subscribe/mobile-modal-subscribe.jpg);
+    background-repeat: no-repeat;
+
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+
+.modal-subscribe-button{
+    border: 0;
+    background-color: transparent;
+    stroke: var(--secondary-text-color);
+
+    position: absolute;
+    right: 14px;
+    top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-subscribe-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.modal-title{
+
+  padding: 201px 24px 24px 24px ;
+
+    font-family: 'Montserrat';
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform:uppercase;
+    
+}
+
+.modal-title-text{
+    color: var(--accent-color);
+}
+
+.form-subscribe{
+    position: relative;
+    margin: 0px 24px 32px 24px;
+}
+
+.form-subscribe-mailing{
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 25px;
+    width: 200px;
+    height: 45px;
+    padding: 14px 33px 14px 18px;
+    background-color: var(--primary-bg-color);
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+
+}
+
+.btn-subscribe-mailing{
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 100px;
+    width: 100px;
+    height: 45px;
+
+    position: absolute;
+  left: 163px;
+  
+}
+
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
