@@ -14,7 +14,6 @@
 .reviews-list {
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
   margin-bottom: 65px;
   padding-top: 42px;
 }
@@ -108,22 +107,4 @@
     font-size: 18px;
     line-height: 1.22;
   }
-}
-
-/*Pagination*/
-
-.swiper {
-  width: 335px;
-  height: 275px;
-}
-.reviews-slider .swiper-pagination {
-  width: 13px;
-  height: 13px;
-  background: rgba(17, 17, 17, 0.553);
-}
-.reviews-slider .swiper-pagination-active {
-  width: 28px;
-  height: 13px;
-  border-radius: 32px;
-  background: #fd9222;
 }
