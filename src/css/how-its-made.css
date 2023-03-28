@@ -27,14 +27,89 @@
   }
 }
 
-.how-its-made__image {
-  max-width: 100%;
+.how-its-made__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 335px;
+  height: 500px;
+  overflow: hidden;
   border-radius: 15px;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  );
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/how-its-made/mobile-how-its-made.jpg),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .how-its-made__video {
+    background-image: url(/img/how-its-made/mobile-how-its-made@2x.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-its-made__video {
+    width: 614px;
+    height: 400px;
+    background-image: url(/img/how-its-made/tablet-how-its-made.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .how-its-made__video {
+      background-image: url(/img/how-its-made/tablet-how-its-made@2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-its-made__video {
+    width: 600px;
+    height: 400px;
+    background-image: url(/img/how-its-made/desktop-how-its-made.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .how-its-made__video {
+      background-image: url(/img/how-its-made/desktop-how-its-made@2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+  }
+}
+
+.svgicon {
+  width: 44px;
+  height: 44px;
+  --play-button-fill: #f5f4f4;
+  --play-button-stroke: #f5f4f4;
+  transition: width var(--transition-duration-and-func),
+    height var(--transition-duration-and-func);
+}
+
+.how-its-made__video:hover .svgicon,
+.how-its-made__video:hover .svgicon {
+  width: 50px;
+  height: 50px;
+}
+
+.how-its-made__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1200px) {
