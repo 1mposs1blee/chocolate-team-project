@@ -1,28 +1,23 @@
-.adventages.section {
+.adventages .container {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--secondary-color);
   color: var(--secondary-text-color);
 }
+
 @media screen and (min-width: 768px) {
-  .adventages.section {
-    padding-top: 50px;
-    padding-bottom: 69px;
+  .adventages .container {
+    padding: 50px 32px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-    .adventages.section {
-        padding-bottom: 35px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages .container {
-    padding-left: 50px;
-    padding-right: 50px;
+  .adventages .container {
+    padding: 50px 50px;
   }
 }
+
+.adventages-list {}
 
 @media screen and (min-width: 768px) {
   .adventages-list {
@@ -32,9 +27,10 @@
     gap: 32px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .adventages-list {
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
     gap: 70px;
   }
@@ -44,18 +40,21 @@
   margin-bottom: 20px;
   padding-right: 28px;
 }
+
 @media screen and (min-width: 768px) {
   .adventages-item {
     margin-bottom: 0;
     width: 326px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .adventages-item {
     position: relative;
     padding-right: 18px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .adventages-item:not(:last-child)::after {
     position: absolute;
@@ -76,6 +75,7 @@
   border-radius: 50%;
   margin-bottom: 22px;
 }
+
 .adventages-icon {
   fill: var(--accent-color);
 }
