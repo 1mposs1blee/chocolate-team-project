@@ -6,6 +6,7 @@
   transition-property: opacity, vissability;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 @media screen and (min-width: 320px) {
   .modal-thank {
     position: fixed;
@@ -112,7 +113,7 @@
 }
 
 @media screen and (min-width: 320px) {
-  .modal-title {
+  .modal-thank-title {
     display: block;
     font-weight: 600;
     font-size: 20px;
@@ -126,7 +127,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .modal-title {
+  .modal-thank-title {
     font-size: 24px;
     line-height: 116.666667%;
     /* 28/24 */
@@ -134,7 +135,7 @@
 }
 
 @media screen and (min-width: 320px) {
-  .modal-text {
+  .modal-thank-text {
     width: 168px;
     font-size: 14px;
     line-height: 114.285714%;
@@ -145,7 +146,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .modal-text {
+  .modal-thank-text {
     width: 100%;
     font-size: 18px;
     line-height: 133.333333%;
