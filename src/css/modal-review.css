@@ -1,12 +1,11 @@
-.modal.review-modal {
+.review-modal.modal {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity var(--transition-duration-and-func);
 }
 
-.modal.review-modal.active,
-.overlay.backdrop-review-modal.active {
+.review-modal.modal.active {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -31,7 +30,7 @@
     background-color: #FAFAFA;
     padding: 32px 24px;
     z-index: 5;
-}   
+}
 
 @media screen and (min-width: 768px) {
     .review-modal {
