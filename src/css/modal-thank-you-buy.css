@@ -4,7 +4,7 @@
   pointer-events: none;
   z-index: 30;
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -20,8 +20,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .modal-thank-you-buy {
     background-image: url(/img/png-version/mobile-chocolate-modal@2x.png);
   }
@@ -91,8 +91,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .modal-thank-you-buy {
       background-image: url(/img/png-version/desktop-tablet-chocolate-modal@2x.png);
     }
