@@ -90,22 +90,13 @@
 /* ================ SLIDER =============== */
 
 @media screen and (max-width: 768px) {
-  .swiper {
+  .swiper.modal-bay-swiper {
     width: 231px;
-    height: 300px;
+    height: 320px;
   }
-
-  .swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
-    background: rgba(17, 17, 17, 0.553);
-  }
-
-  .swiper-pagination-bullet-active {
-    width: 28px;
-    height: 13px;
-    border-radius: 32px;
-    background: var(--accent-color);
+ 
+  .swiper-pagination.modal-buy-swiper-pagination {
+    margin-top: -44px;
   }
 }
 
