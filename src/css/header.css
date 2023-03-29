@@ -320,15 +320,21 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-nav-link {
+    padding-top: 28px;
+    padding-bottom: 36px;
+    transition: var(--transition-duration-and-func);
+}
+
 .header-nav-item:last-child {
     margin-right: 00px;
 }
 
-.header-nav-item:hover {
+.header-nav-link:hover {
     color: var(--accent-color);
 }
 
-.header-nav-item:focus {
+.header-nav-link:focus {
     color: var(--accent-color);
 }
 
