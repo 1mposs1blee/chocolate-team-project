@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-8bc55825.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-a5b28eda.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-dad92453.css">
 </head>
 
 <body>
@@ -809,7 +809,7 @@
 
     <div class="swiper modal-bay-swiper">
       <ul class="swiper-wrapper">
-        <li class="swiper-slide">
+        <li class="swiper-slide modal-bay-swiper-slide">
           <input
             id="weight-100g-s"
             class="modal-buy-form-check visually-hidden"
@@ -864,7 +864,7 @@
           </label>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="modal-buy-swiper-pagination swiper-pagination"></div>
     </div>
 
     <!-- ================ /SLIDER =============== -->
@@ -941,6 +941,7 @@
             placeholder="Name"
             name="user_name"
             required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             minlength="2"
           />
           <input
@@ -949,6 +950,7 @@
             placeholder="Surname"
             name="user_surname"
             required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             minlength="2"
           />
         </span>
@@ -961,6 +963,7 @@
           type="email"
           placeholder="Enter your email"
           name="user_email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
       </label>
       <label class="modal-buy-info-field"
