@@ -12,35 +12,32 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 } */
+
 .modal-thank {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     z-index: 30;
+
+    position: fixed;
+    width: 311px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 84px 24px 178px 58px;
+
+    background-image: url(/img/png-version/mobile-chocolate-modal.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: var(--accent-color);
+    background-size: 270px;
 }
 
-@media screen and (min-width: 320px) {
-    .modal-thank {
-        position: fixed;
-        width: 311px;
-        height: 350px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 15px;
-        padding: 84px 24px 178px 58px;
-
-        background-image: url(/img/png-version/mobile-chocolate-modal.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-color: var(--accent-color);
-        background-size: 270px;
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-screen and (min-resolution: 192dpi) and (min-width: 320px),
-screen and (min-resolution: 2dppx) and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
     .modal-thank {
         background-image: url(/img/png-version/mobile-chocolate-modal@2x.png);
     }
@@ -64,29 +61,29 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 }
 
-@media screen and (min-width: 320px) {
-    .modal-btn {
-        position: absolute;
-        top: 14px;
-        right: 14px;
 
-        padding: 0;
-        width: 28px;
-        height: 28px;
-        background-color: var(--secondary-accent-color);
-        border-radius: 50%;
-        border-color: transparent;
+.modal-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 50%;
+    border-color: transparent;
 
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        transition-property: background-color, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 @media screen and (min-width: 768px) {
     .modal-btn {
@@ -97,14 +94,14 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 }
 
-@media screen and (min-width: 320px) {
-    .modal-icon {
-        display: block;
-        width: 16px;
-        height: 16px;
-        stroke: #f16529;
-    }
+
+.modal-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    stroke: #f16529;
 }
+
 
 @media screen and (min-width: 768px) {
     .modal-icon {
@@ -124,37 +121,38 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     stroke: var(--secondary-accent-color);
 }
 
-@media screen and (min-width: 320px) {
-    .modal-title {
-        display: block;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 120%;
-        /* 24/20 */
-        margin-bottom: 8px;
-        color: var(--secondary-accent-color);
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-    }
+.modal-title-thank-review {
+    max-width: 229px;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    margin-bottom: 8px;
+    color: var(--secondary-accent-color);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
+
 @media screen and (min-width: 768px) {
-    .modal-title {
+    .modal-title-thank-review {
+        max-width: 276px;
+        width: 100%;
         font-size: 24px;
         line-height: 116.666667%;
         /* 28/24 */
     }
 }
 
-@media screen and (min-width: 320px) {
-    .modal-text {
-        width: 168px;
-        font-size: 14px;
-        line-height: 114.285714%;
-        /* 16/14 */
-        color: var(--secondary-text-color);
-        letter-spacing: -0.02em;
-    }
+.modal-text {
+    width: 168px;
+    font-size: 14px;
+    line-height: 114.285714%;
+    /* 16/14 */
+    color: var(--secondary-text-color);
+    letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
