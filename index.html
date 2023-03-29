@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/chocolate-team-project/assets/index-8bc55825.js"></script>
-    <link rel="stylesheet" href="/chocolate-team-project/assets/index-4efb1ec9.css">
+    <link rel="stylesheet" href="/chocolate-team-project/assets/index-94b36f77.css">
   </head>
 
   <body>
@@ -723,7 +723,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="subscribe-button" type="submit">Subscribe</button>
+    <button class="subscribe-button js-open-modal" type="submit" data-modal="10">Subscribe</button>
   </div>
 </section>
     </main>
@@ -1090,7 +1090,34 @@
     <h3 class="modal-title">thank you for your feedback!</h3>
     <p class="modal-text">We are so happy to hear from you!</p>
 </div>
-    
+    <div class="modal modal-subscribe-container" data-modal="10">
+
+    <!-- Кнопка закриття -->
+
+    <button class="modal-subscribe-button js-modal-close" type="submit">
+
+        <svg class="modal-subscribe-icon">
+            <use href="/chocolate-team-project/assets/sprite-e2b39b5c.svg#icon-close">
+
+            </use>
+        </svg>
+    </button>
+
+    <!-- Заголовок модалки -->
+
+    <h3 class="modal-title">Explore our <br> <span class="modal-title-text">new chocolate</span> first!</h3>
+
+    <!-- Форма заповнення + кнопка -->
+
+    <div class="modal-subscribe-form">
+        <form class="form-subscribe">
+            <input class="form-subscribe-mailing" type="email" placeholder="Enter your email">
+            <button class="btn-subscribe-mailing js-modal-close" type="submit">Submit
+            </button>
+        </form>
+
+    </div>
+</div>
     <div class="overlay backdrop js-overlay-modal"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
