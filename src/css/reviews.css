@@ -45,10 +45,11 @@
 
 .reviewer-label {
   max-width: 335px;
-  height: 200px;
+  min-height: 200px;
   padding-top: 60px;
   padding-left: 18px;
   padding-right: 18px;
+  padding-bottom: 18px;
 
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -116,16 +117,16 @@
 } */
 
 .reviews-item.swiper-slide {
-  width: 335px;
+  max-width: 335px;
 }
 @media screen and (min-width: 768px) {
   .swiper-slide.reviews-item {
-    width: 344px;
+    max-width: 344px;
   }
 }
 @media screen and (min-width: 1200px) {
   .swiper-slide.reviews-item {
-    width: 360px;
+    max-width: 360px;
   }
 }
 
