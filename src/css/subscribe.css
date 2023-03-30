@@ -11,6 +11,12 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 374px) {
+  .subscribe .container {
+    padding-bottom: 45px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
