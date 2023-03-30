@@ -9,8 +9,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero {
     background-image: url(/img/hero/mobile-background-hero@2x.jpg);
   }
@@ -121,7 +121,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .hero-section {
     padding-bottom: 50px;
   }
 
@@ -135,8 +135,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/tablet-background-hero@2x.jpg);
     }
@@ -184,7 +184,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .hero-section {
     padding-bottom: 72px;
   }
 
@@ -195,8 +195,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/desktop-background-hero@2x.jpg);
     }
