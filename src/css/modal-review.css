@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width:767px) {
-    .section-title-span {
+    .section-title-span.modal-review-title-span {
         font-size: 19px;
     }
 }
