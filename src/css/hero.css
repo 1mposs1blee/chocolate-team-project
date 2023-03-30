@@ -1,32 +1,29 @@
 .hero {
-  width: 335px;
+  max-width: 335px;
   background-image: url(/img/hero/mobile-background-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
   padding: 395px 20px 21px;
-  /* padding-top: 395px;
-  padding-bottom: 21px; */
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: url(/img/hero/mobile-background-hero@2x.jpg);
   }
 }
 
 .hero-subtitle {
-  width: 299px;
-  font-weight: 500px;
+  max-width: 299px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 32px;
 }
 
 .hero-wrapper {
@@ -48,6 +45,7 @@
   border: none;
   transition: color var(--transition-duration-and-func),
     background-color var(--transition-duration-and-func);
+  margin-top: 32px;
 }
 
 .hero-buy-btn:is(:hover, :focus) {
@@ -66,6 +64,7 @@
   transition: color var(--transition-duration-and-func),
     background-color var(--transition-duration-and-func),
     border var(--transition-duration-and-func);
+  margin-top: 32px;
 }
 
 .hero-link-made:is(:hover, :focus) {
@@ -127,7 +126,7 @@
   }
 
   .hero {
-    width: 704px;
+    max-width: 704px;
     padding-top: 671px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -136,15 +135,15 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/tablet-background-hero@2x.jpg);
     }
   }
 
   .hero-subtitle {
-    width: 484px;
+    max-width: 484px;
     font-size: 28px;
     line-height: 1.21;
   }
@@ -164,8 +163,6 @@
   }
 
   .hero-link-scroll {
-    margin-top: 0;
-    padding-bottom: 0;
     margin-left: auto;
     gap: 14px;
   }
@@ -192,14 +189,14 @@
   }
 
   .hero {
-    width: 1136px;
+    max-width: 1136px;
     padding-top: 381px;
     background-image: url(/img/hero/desktop-background-hero.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/desktop-background-hero@2x.jpg);
     }
