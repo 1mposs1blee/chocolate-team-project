@@ -11,8 +11,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero {
     background-image: url(/img/hero/mobile-background-hero@2x.jpg);
   }
@@ -136,8 +136,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/tablet-background-hero@2x.jpg);
     }
@@ -198,8 +198,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero {
       background-image: url(/img/hero/desktop-background-hero@2x.jpg);
     }

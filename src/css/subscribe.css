@@ -55,7 +55,8 @@
 }
 
 .subscribe.section-title {
-  width: 291px;
+  max-width: 291px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
@@ -63,12 +64,13 @@
 
 @media screen and (min-width: 768px) {
   .subscribe.section-title {
-    width: 378px;
+    max-width: 378px;
   }
 }
 
 .subscribe-text {
-  width: 326px;
+  max-width: 326px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
@@ -76,7 +78,7 @@
 
 @media screen and (min-width: 768px) {
   .subscribe-text {
-    width: 467px;
+    max-width: 467px;
   }
 }
 

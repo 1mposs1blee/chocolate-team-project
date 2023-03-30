@@ -47,12 +47,24 @@
     max-width: 255px;
 }
 
+@media screen and (max-width:767px) {
+    .review-modal-title {
+        max-width: 245px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .review-modal-title {
         font-size: 24px;
         line-height: 1.16;
         max-width: 298px;
         margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .section-title-span {
+        font-size: 19px;
     }
 }
 
