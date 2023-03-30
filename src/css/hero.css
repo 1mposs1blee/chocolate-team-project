@@ -67,6 +67,12 @@
   margin-top: 32px;
 }
 
+@media screen and (min-width: 344px) and (max-width: 371px) {
+  .hero-link-made {
+    margin-right: 15px;
+  }
+}
+
 .hero-link-made:is(:hover, :focus) {
   color: var(--accent-color);
   background-color: transparent;
