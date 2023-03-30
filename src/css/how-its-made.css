@@ -44,9 +44,15 @@
     linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
+@media screen and (max-width: 374px) {
+  .how-its-made__video {
+    width: 315px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .how-its-made__video {
     background-image: url(/img/how-its-made/mobile-how-its-made@2x.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
@@ -62,8 +68,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .how-its-made__video {
       background-image: url(/img/how-its-made/tablet-how-its-made@2x.jpg),
         linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
@@ -80,8 +86,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .how-its-made__video {
       background-image: url(/img/how-its-made/desktop-how-its-made@2x.jpg),
         linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));

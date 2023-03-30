@@ -14,8 +14,7 @@
   }
 }
 
-.unique-components__container {
-}
+.unique-components__container {}
 
 .unique-components__text_wrapper {
   display: flex;
@@ -39,7 +38,8 @@
 @media screen and (min-width: 768px) {
   .unique-components__title {
     font-size: 24px;
-    line-height: 116.67%; /* 28/24 */
+    line-height: 116.67%;
+    /* 28/24 */
     max-width: 411px;
     margin-bottom: 28px;
   }
@@ -55,8 +55,7 @@
   }
 }
 
-.unique-components__cards_wrapper {
-}
+.unique-components__cards_wrapper {}
 
 .unique-components__card-list {
   display: flex;
@@ -88,6 +87,12 @@
   width: 335px;
   height: 270px;
   perspective: 1000px;
+}
+
+@media screen and (max-width: 374px) {
+  .unique-components__flip-card {
+    width: 315px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -126,23 +131,19 @@
   align-items: center;
 }
 
-.card-list__item_unique-components:first-child
-  .unique-components__flip-card-front {
+.card-list__item_unique-components:first-child .unique-components__flip-card-front {
   background-color: var(--accent-color);
 }
 
-.card-list__item_unique-components:nth-child(3)
-  .unique-components__flip-card-front {
+.card-list__item_unique-components:nth-child(3) .unique-components__flip-card-front {
   background-color: var(--secondary-color);
 }
 
-.card-list__item_unique-components:nth-child(2n)
-  .unique-components__flip-card-front {
+.card-list__item_unique-components:nth-child(2n) .unique-components__flip-card-front {
   border: 1px solid var(--accent-color);
 }
 
-.card__image_unique-components {
-}
+.card__image_unique-components {}
 
 .flip-card-front__title_unique-components {
   font-weight: 600;
@@ -154,7 +155,8 @@
 .flip-card-back__title_unique-components {
   font-weight: 600;
   font-size: 18px;
-  line-height: 122.22%; /* 22/18 */
+  line-height: 122.22%;
+  /* 22/18 */
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -176,14 +178,14 @@
   margin-bottom: 14px;
 }
 
-.flip-card__link-item_unique-components {
-}
+.flip-card__link-item_unique-components {}
 
 .flip-card__link {
   display: flex;
   align-items: center;
   font-size: 10px;
-  line-height: 120%; /* 12/10 */
+  line-height: 120%;
+  /* 12/10 */
   height: 24px;
   padding: 6px 16px;
   border-radius: 35px;
@@ -197,5 +199,4 @@
   background-color: var(--accent-color);
 }
 
-.flip-card__paragraph_unique-components {
-}
+.flip-card__paragraph_unique-components {}

@@ -90,6 +90,12 @@
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 374px) {
+  .reviews-subtitle {
+    margin-bottom: 7px;
+  }
+}
+
 .reviews-button {
   display: block;
   margin-top: 32px;
