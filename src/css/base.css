@@ -105,3 +105,16 @@ body {
 .section-title-span {
   color: var(--accent-color);
 }
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 7px;
+  background: #fd9222;
+}
