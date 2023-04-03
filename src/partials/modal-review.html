@@ -1,0 +1,36 @@
+<div class="review-modal modal" data-modal="review-modal">
+    <button class="close-btn js-modal-close">
+        <svg class="close-icon">
+            <use href="/img/sprite.svg#icon-close">
+            </use>
+        </svg>
+
+    </button>
+    <h2 class="section-title review-modal-title">leave a review about <span
+            class="section-title-span modal-review-title-span"> our
+            chocolate</span></h2>
+    <form class="review-modal-form">
+        <label class="review-label">
+            <input class="review-input" type="text" name="username" placeholder="Name" required>
+        </label>
+        <label class="review-label">
+            <input class="review-input" type="email" name="mail"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Email" required>
+        </label>
+        <label class="review-label">
+            <span class="input-flag">
+                <input class="review-input review-phone-input" type="text" name="phone" placeholder="Phone" required
+                    pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}">
+                <span class="flag-phone">
+                    <svg class="flag-icon">
+                        <use href="/img/sprite.svg#icon-flag"></use>
+                    </svg>
+                    +380 </span>
+            </span>
+        </label>
+        <label class="review-label">
+            <textarea class="review-input review-textarea" name="comment" placeholder="Enter text"></textarea>
+        </label>
+        <button type="submit" class="send-btn js-open-modal js-modal-close" data-modal="modal-thank">Send</button>
+    </form>
+</div>

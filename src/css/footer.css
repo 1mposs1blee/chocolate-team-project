@@ -1,0 +1,244 @@
+/* Footer */
+
+.footer .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .footer .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.footer-content {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-title-text {
+    color: var(--secondary-text-color);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    max-width: 300px;
+
+    letter-spacing: -0.02em;
+}
+
+.title-contacts-footer {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 14px;
+    display: flex;
+
+    color: var(--secondary-text-color);
+}
+
+/* Address Footer */
+.address-footer {
+    font-style: normal;
+}
+
+.address-nav-footer {
+    font-family: 'Montserrat';
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+
+    line-height: 1.29;
+    text-decoration: none;
+}
+
+/* Footer Contacts */
+.footer-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.address-footer {
+    font-style: normal;
+}
+
+.item-address-footer {
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.title-contacts-footer {
+    margin-bottom: 14px;
+}
+
+.site-address-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.site-nav-footer {
+    display: flex;
+    align-items: center;
+}
+
+.item-nav-footer {
+    margin-right: 40px;
+}
+
+.navigation-link-footer {
+    font-family: 'Montserrat';
+    display: block;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 18px;
+
+    justify-content: center;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: color;
+    animation-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-link-footer.navigation-first-link-footer {
+        padding-top: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-link-footer.navigation-first-link-footer {
+        padding-top: 24px;
+    }
+}
+
+.navigation-link-footer:hover,
+.navigation-link-footer:focus {
+    color: var(--accent-color);
+}
+
+/* Socials Footer */
+
+.socials-icon-footer {
+    width: 24px;
+    height: 24px;
+    stroke: var(--secondary-text-color);
+    transition-duration: 250ms;
+    transition-property: stroke;
+    animation-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-icon-footer:hover,
+.socials-icon-footer:focus {
+    stroke: var(--accent-color);
+}
+
+.socials-list-footer {
+    display: flex;
+    gap: 18px;
+}
+
+.socials-link-footer {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Footer */
+
+.footer-container {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: column;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-title-text {
+    margin-bottom: 32px;
+    font-size: 24px;
+}
+
+.address-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    flex-direction: column;
+}
+
+.footer-contacts {
+    margin-left: 0px;
+    padding-bottom: 32px;
+}
+
+.site-nav-footer {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.footer-socials {
+    margin-left: auto;
+}
+
+.socials-list-footer {
+    gap: 14px;
+}
+
+.socials-icon-footer {
+    width: 22px;
+    height: 22px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        max-width: 1200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-content {
+        flex-direction: unset;
+    }
+
+    .footer-contacts {
+        margin-left: auto;
+    }
+
+    .footer-title-text {
+        margin-bottom: 54px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .site-nav-footer {
+        flex-direction: unset;
+    }
+
+    .socials-icon-footer {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-title-text {
+        margin-bottom: 62px;
+    }
+}

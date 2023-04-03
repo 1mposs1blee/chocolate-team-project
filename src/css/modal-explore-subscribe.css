@@ -1,0 +1,202 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 30;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: var(--transition-duration-and-func);
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.modal-subscribe-container {
+
+    background-color: var(--primary-bg-color);
+    border-radius: 15px;
+    position: absolute;
+    width: 311px;
+
+    background-image: url(/img/modal-explore-subscribe/mobile-modal-subscribe.jpg);
+    background-repeat: no-repeat;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-subscribe-container {
+        background-image: url(/img/modal-explore-subscribe/mobile-modal-subscribe@2x.jpg);
+        background-size: contain;
+    }
+}
+
+@media (min-width:768px) {
+    .modal-subscribe-container {
+        background-image: url(/img/modal-explore-subscribe/desktop-tablet-modal-subscribe.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .modal-subscribe-container {
+            background-image: url(/img/modal-explore-subscribe/desktop-tablet-modal-subscribe@2x.jpg);
+        }
+    }
+}
+
+
+@media (min-width:768px) {
+    .modal-subscribe-container {
+        width: 538px;
+    }
+
+}
+
+.modal-subscribe-button {
+    border: 0;
+    background-color: transparent;
+    stroke: var(--secondary-text-color);
+
+    position: absolute;
+    right: 14px;
+    top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-subscribe-icon {
+    height: 24px;
+    width: 24px;
+}
+
+@media (min-width:768px) {
+    .modal-subscribe-icon {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+.modal-title {
+
+    padding: 201px 24px 24px 24px;
+
+    font-family: 'Montserrat';
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-text-color);
+
+}
+
+@media (min-width: 768px) {
+    .modal-title {
+        padding: 236px 200px 28px 40px;
+
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: -0.03em;
+    }
+}
+
+.modal-title-text {
+    color: var(--accent-color);
+}
+
+.form-subscribe {
+    position: relative;
+    margin: 0px 24px 32px 24px;
+}
+
+@media (min-width: 768px) {
+    .form-subscribe {
+        margin: 0px 0px 40px 40px;
+    }
+}
+
+.form-subscribe-mailing {
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 25px;
+    width: 200px;
+    height: 45px;
+    padding: 14px 33px 14px 18px;
+    background-color: var(--primary-bg-color);
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+
+}
+
+@media (min-width: 768px) {
+    .form-subscribe-mailing {
+        border-radius: 30px;
+        width: 313px;
+        height: 52px;
+        padding: 14px 24px 14px 24px;
+
+        font-size: 18px;
+        line-height: 1.22;
+        margin-right: 8px;
+
+    }
+}
+
+.btn-subscribe-mailing {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 100px;
+    width: 100px;
+    height: 45px;
+    padding: 14px 22px;
+    color: var(--secondary-text-color);
+
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21px;
+
+}
+
+@media (max-width: 767.98px) {
+    .btn-subscribe-mailing {
+        position: absolute;
+        left: 163px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .btn-subscribe-mailing {
+        width: 137px;
+        height: 52px;
+        padding: 16px 42px;
+    }
+
+}
+
+.btn-subscribe-mailing:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-accent-color);
+}

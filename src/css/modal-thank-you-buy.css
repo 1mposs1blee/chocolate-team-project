@@ -1,0 +1,122 @@
+.modal-thank-you-buy {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 30;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 311px;
+  height: 350px;
+  background-color: var(--accent-color);
+  border-radius: 15px;
+  background-image: url(/img/png-version/mobile-chocolate-modal.png);
+  background-position: left bottom;
+  background-size: 276px;
+  background-repeat: no-repeat;
+  padding: 84px 24px 170px 68px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .modal-thank-you-buy {
+    background-image: url(/img/png-version/mobile-chocolate-modal@2x.png);
+  }
+}
+
+.modal.modal-thank-you-buy.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--secondary-accent-color);
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transition-duration-and-func),
+    border var(--transition-duration-and-func);
+}
+
+.modal-close-button-icon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--accent-color);
+}
+
+.modal-close-button:is(:hover, :focus) {
+  background-color: var(--accent-color);
+  border: 1px solid var(--secondary-accent-color);
+}
+
+.modal-close-button:is(:hover, :focus) .modal-close-button-icon {
+  stroke: var(--secondary-accent-color);
+}
+
+.thank-you-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-accent-color);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.thank-you-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-thank-you-buy {
+    width: 516px;
+    height: 414px;
+    padding: 154px 44px 154px 163px;
+    background-image: url(/img/png-version/desktop-tablet-chocolate-modal.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal-thank-you-buy {
+      background-image: url(/img/png-version/desktop-tablet-chocolate-modal@2x.png);
+    }
+  }
+
+  .modal-close-button {
+    top: 24px;
+    right: 26px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .modal-close-button-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .thank-you-subtitle {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .thank-you-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

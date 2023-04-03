@@ -1,0 +1,371 @@
+.header {
+  background-color: var(--primary-bg-color);
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  align-items: center;
+  display: flex;
+
+  padding-top: 25px;
+  padding-bottom: 19px;
+  gap: 6px;
+
+  color: var(--main-text-color);
+
+  font-family: 'Montserrat';
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.header-logo-text {
+  font-style: italic;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .header-logo {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-logo {
+    padding-top: 26px;
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+    margin-right: 188px;
+  }
+}
+
+.header-icon {
+  width: 21px;
+  height: 21px;
+  stroke: var(--accent-color);
+  fill: var(--primary-bg-color);
+}
+
+@media (min-width: 1199.98px) {
+  .header-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-bg-color);
+  border: none;
+}
+
+@media (min-width: 1199.98px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 21px;
+  height: 14px;
+
+  stroke: var(--secondary-color);
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .menu-icon {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(100%);
+  transition: transform 500ms;
+
+  width: 100%;
+  max-width: 220px;
+
+  background-color: var(--secondary-color);
+  z-index: 999;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .mobile-menu {
+    max-width: 290px;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-close {
+  border: 0;
+  background-color: transparent;
+  stroke: var(--secondary-text-color);
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-close-icon {
+  width: 28px;
+  height: 28px;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .burger-close-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-item-menu {
+  margin-top: 136px;
+  margin-right: 46px;
+  margin-left: 50px;
+  width: max-content;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .header-item-menu {
+    margin-top: 156px;
+    margin-right: 81px;
+    margin-left: 85px;
+  }
+}
+
+.header-link-menu {
+  color: var(--secondary-text-color);
+
+  transition-duration: 250ms;
+  transition-property: color;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link-menu:hover {
+  color: var(--accent-color);
+}
+
+.header-link-menu:focus {
+  color: var(--accent-color);
+}
+
+.header-link-menu {
+  margin-bottom: 24px;
+}
+
+.header-link-menu:last-child {
+  margin-bottom: 0px;
+}
+
+.header-list-menu {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 32px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .header-list-menu {
+    padding-bottom: 24px;
+  }
+}
+
+.header-socials-menu {
+  stroke: var(--secondary-text-color);
+  fill: transparent;
+
+  transition-duration: 250ms;
+  transition-property: stroke;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-socials-menu:hover {
+  stroke: var(--accent-color);
+}
+
+.header-socials-menu:focus {
+  stroke: var(--accent-color);
+}
+
+.header-instagram-menu {
+  width: 22px;
+  height: 22px;
+  margin-right: 18px;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .header-instagram-menu {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.header-twiter-menu {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .header-twiter-menu {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header-nav-list {
+    display: none;
+  }
+}
+
+.header-nav-item {
+  margin-right: 24px;
+  padding-top: 28px;
+  padding-bottom: 36px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link {
+  padding-top: 28px;
+  padding-bottom: 36px;
+  transition: var(--transition-duration-and-func);
+}
+
+.header-nav-item:last-child {
+  margin-right: 00px;
+}
+
+.header-nav-link:hover {
+  color: var(--accent-color);
+}
+
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-container {
+  display: none;
+}
+
+.header-socials {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 1199.98px) {
+  .header-socials {
+    display: none;
+  }
+}
+
+.header-socials-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-instagram {
+  width: 24px;
+  height: 24px;
+
+  transition-duration: 250ms;
+  transition-property: stroke;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  stroke: var(--secondary-color);
+  fill: var(--primary-bg-color);
+}
+.header-instagram:hover {
+  stroke: var(--accent-color);
+}
+
+.header-instagram:focus {
+  stroke: var(--accent-color);
+}
+
+.header-twiter {
+  width: 24px;
+  height: 24px;
+
+  transition-duration: 250ms;
+  transition-property: stroke;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  stroke: var(--secondary-color);
+  fill: var(--primary-bg-color);
+}
+
+.header-twiter:hover {
+  stroke: var(--accent-color);
+}
+
+.header-twiter:focus {
+  stroke: var(--accent-color);
+}

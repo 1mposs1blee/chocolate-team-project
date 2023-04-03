@@ -1,0 +1,214 @@
+.hero {
+  max-width: 335px;
+  background-image: url(/img/hero/mobile-background-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 395px 20px 21px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/img/hero/mobile-background-hero@2x.jpg);
+  }
+}
+
+.hero-subtitle {
+  max-width: 299px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--secondary-text-color);
+  text-align: left;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-buy-btn {
+  padding: 12px 28px;
+  margin-right: 14px;
+  min-width: 120px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+  transition: color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func);
+  margin-top: 32px;
+}
+
+.hero-buy-btn:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--secondary-accent-color);
+}
+
+.hero-link-made {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--secondary-text-color);
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 100px;
+  padding: 12px 28px;
+  transition: color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func),
+    border var(--transition-duration-and-func);
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 344px) and (max-width: 371px) {
+  .hero-link-made {
+    margin-right: 15px;
+  }
+}
+
+.hero-link-made:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.hero-link-scroll {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color var(--transition-duration-and-func);
+}
+
+.hero-link-scroll .hero-scroll-wrapper {
+  background: var(--secondary-text-color);
+  color: var(--accent-color);
+}
+
+.hero-link-scroll:hover .hero-scroll-wrapper {
+  background: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.hero-link-scroll .hero-text-scroll {
+  color: var(--secondary-text-color);
+}
+
+.hero-link-scroll:hover .hero-text-scroll {
+  color: var(--accent-color);
+}
+
+.hero-text-scroll {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.hero-scroll-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.hero-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 50px;
+  }
+
+  .hero {
+    max-width: 704px;
+    padding-top: 671px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(/img/hero/tablet-background-hero.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/img/hero/tablet-background-hero@2x.jpg);
+    }
+  }
+
+  .hero-subtitle {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .hero-wrapper {
+    display: flex;
+  }
+
+  .hero-buy-btn {
+    padding: 14px 40px;
+    min-width: 144px;
+    height: 45px;
+  }
+
+  .hero-link-made {
+    padding: 13px 39px;
+  }
+
+  .hero-link-scroll {
+    margin-left: auto;
+    gap: 14px;
+  }
+
+  .hero-text-scroll {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .hero-scroll-wrapper {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
+
+  .hero {
+    max-width: 1136px;
+    padding-top: 381px;
+    background-image: url(/img/hero/desktop-background-hero.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/img/hero/desktop-background-hero@2x.jpg);
+    }
+  }
+
+  .hero-link-scroll {
+    margin-left: auto;
+  }
+}
