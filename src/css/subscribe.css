@@ -5,30 +5,32 @@
 .subscribe .container {
   padding-top: 62px;
   padding-bottom: 63px;
-  background-image: url(../img/subscribe/mobile-background-subscribe.jpg);
-  background-size: 375px;
+  background-image: url(/img/subscribe/mobile-background-subscribe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .subscribe .container {
     padding-top: 72px;
     padding-bottom: 72px;
-    background-image: url(../img/subscribe/tablet-background-subscribe.jpg);
-    background-size: 768px;
+    background-image: url(/img/subscribe/tablet-background-subscribe.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
-  .subscribe .container {
-    background-image: url(../img/subscribe/desktop-background-subscribe.jpg);
-    background-size: 1200px;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe .container {
-    background-image: url(../img/subscribe/mobile-background-subscribe@2x.jpg);
+    background-image: url(/img/subscribe/desktop-background-subscribe.jpg);
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe .container {
+    background-image: url(/img/subscribe/mobile-background-subscribe@2x.jpg);
     background-size: cover;
   }
 }
@@ -39,7 +41,7 @@
   .subscribe .container {
     padding-top: 72px;
     padding-bottom: 72px;
-    background-image: url(../img/subscribe/tablet-background-subscribe@2x.jpg);
+    background-image: url(/img/subscribe/tablet-background-subscribe@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -47,7 +49,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe .container {
-    background-image: url(../img/subscribe/desktop-background-subscribe@2x.jpg);
+    background-image: url(/img/subscribe/desktop-background-subscribe@2x.jpg);
   }
 }
 
