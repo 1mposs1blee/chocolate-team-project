@@ -90,18 +90,18 @@
 /* ================ SLIDER =============== */
 
 @media screen and (max-width: 768px) {
-  .swiper.modal-bay-swiper {
+  .modal-buy__swiper.swiper {
     width: 231px;
     height: 320px;
   }
- 
-  .swiper-pagination.modal-buy-swiper-pagination {
+
+  .swiper-pagination.modal-buy__swiper-pagination {
     margin-top: -44px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .swiper.modal-bay-swiper {
+  .modal-buy__swiper.swiper {
     display: none;
   }
 }
